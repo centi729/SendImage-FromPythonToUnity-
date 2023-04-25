@@ -11,7 +11,7 @@ Client Side (python)
 Server Side (unity3D)
 1. receive the compressed bytecode
 2. decompress it
-3. make it as texture
+3. make it as a texture
 
 ## How to use this?
 
@@ -66,3 +66,12 @@ if you just want it to be excuted at start, use this
 
 
 **IMPORTANT** Unity editor gets stuck when python code is not running.
+
+
+
+
+
+## Note
+- If you want to send an image captured from Raspberry Pi to unity3D , unity asset so-called [FMETP STREAM](https://assetstore.unity.com/packages/tools/video/fmetp-stream-3-0-221362) might be another option.
+
+- This script is chatGPT-assisted

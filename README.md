@@ -13,14 +13,14 @@ Server Side (unity3D)
 2. decompress it
 3. make it as a texture
 
-## How to use this?
+## How to use
 
 1. You need zlib in unity. I used [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity) and installed [Iconic.Zlib.Netstandard](https://github.com/HelloKitty/Iconic.Zlib.Netstandard)
 2. Download the unity script and add this script component to a **Quad** Object which will display received image
 3. Add a UI button object to call 'PressButton' function
 4. excute python script and then play unity
 
-if you just want it to be excuted at start, use this
+If you just want it to be excuted at start, use this
 
 
     public int port = 50000;
@@ -64,7 +64,11 @@ if you just want it to be excuted at start, use this
         }
     }
 
+If the image resizing does not work correctly, use imutils library instead
 
+    ret, frame = cap.read()
+    frame = imutils.resize(frame, width = 300)
+    ....
 
 ## Note
 
